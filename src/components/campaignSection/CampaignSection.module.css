@@ -1,0 +1,75 @@
+.campaignSection {
+    background-color: black;
+    color: var(--green);
+    padding: 100px 20px;
+    /* scroll-behavior: smooth; */
+}
+
+.campaignSectionCont {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.campaignHead {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campaignHeadP {
+    font-size: calc(20px + 4vw);
+    line-height: calc(20px + 5vw);
+    max-width: 1400px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.campaignPills {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    border: 4px solid var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 40px;
+    border-radius: 60px;
+    font-size: 24px;
+    /* width: 100%; */
+}
+
+.pill:hover {
+    background-color: #BBEF4430;
+    cursor: pointer;
+}
+
+.campaignsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .campaignSection {
+        padding: 100px 6%;
+    }
+
+    .campaignHeadP {
+        text-align: center;
+    }
+
+    .campaignPills {
+        flex-direction: column;
+    }
+
+    .pill {
+        width: 100%;
+        padding: 3%;
+        font-size: 28px;
+    }
+}

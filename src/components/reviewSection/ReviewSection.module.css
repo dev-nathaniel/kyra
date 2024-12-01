@@ -1,0 +1,53 @@
+.reviewSection {
+    padding: 100px 20px;
+    background-color: black;
+    color: var(--green);
+}
+
+.reviewSectionCont {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.reviewSectionHead {
+    font-size: calc(30px + 5vw);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reviewSectionHead p {
+    max-width: 1000px;
+}
+
+.reviewsButtonCont {
+    display: flex;
+    justify-content: center;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviewsButton {
+    border: 2px solid var(--green);
+    padding: 30px 38px;
+    border-radius: 55px;
+    font-size: 32px;
+}
+
+.reviewsButton:hover {
+    background-color: #BBEF4430;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .reviews {
+        flex-direction: column;
+        gap: 40px;
+    }   
+}

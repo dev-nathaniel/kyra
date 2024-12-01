@@ -1,0 +1,39 @@
+.footer {
+    background-color: var(--green);
+    padding: 100px 50px 0 50px;
+}
+
+.footerCont {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.footerTop {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: calc(16px + 1vw);
+}
+
+.footerLinks p {
+    cursor: pointer;
+}
+
+.footerRight {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .footerLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

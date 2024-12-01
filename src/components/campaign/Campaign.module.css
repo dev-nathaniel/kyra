@@ -1,0 +1,137 @@
+.campaign {
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.campaignCont {
+    display: flex;
+}
+
+.campaignLeft {
+    flex: 1;
+    background-color: #ec96cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    /* border-radius: 10px; */
+    position: relative;
+}
+
+.leftImg {
+    width: 22vw;
+}
+
+.leftImg img {
+    border: 6px solid black;
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.campaignAbsolute1, .campaignAbsolute2 {
+    position: absolute;
+    border: 3px solid var(--green);
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    font-size: calc(12px + 1.5vw);
+}
+
+.campaignAbsolute1 {
+    top: 15%;
+    right: 11%;
+}
+
+.campaignAbsolute2 {
+    bottom: 15%;
+    left: 11%;
+}
+
+.campaignRight {
+    flex: 1;
+    padding: 4% 0;
+    display: flex;
+}
+
+.campaignRightCont {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 7%;
+}
+
+.tag {
+    font-size: calc(14px + 3vw);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.desc {
+    font-size: calc(12px + 1vw);
+}
+
+.campaignButton {
+    display: flex;
+    /* align-items: flex-end; */
+    height: 100%;
+}
+
+.campaignButton div {
+    align-self: flex-end;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--green);
+    padding: 6% 0;
+    border-radius: 100px;
+    font-size: calc(12px + 2vw);
+}
+
+.campaignButton div:hover {
+    background-color: #BBEF4430;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .campaignCont {
+        flex-direction: column;
+    }
+
+    .leftImg {
+        width: calc(150px + 6vw);
+    }
+
+    .campaignAbsolute1, .campaignAbsolute2 {
+        padding: 2%;
+        font-size: calc(12px + 2vw);
+    }
+
+    .campaignRight {
+        flex: auto;
+        /* height: calc(350px + 9vw); */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tag {
+        font-size: calc(14px + 4vw);
+    }
+
+    .desc {
+        font-size: calc(12px + 2vw);
+    }
+
+    .campaignButton {
+        margin-top: 50px;
+    }
+
+    .campaignButton div {
+        padding: 5% 0;
+    }
+}

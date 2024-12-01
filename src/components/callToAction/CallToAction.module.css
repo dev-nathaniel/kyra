@@ -1,0 +1,48 @@
+.CTA {
+    background-color: black;
+    color: var(--green);
+    padding: 100px 20px;
+}
+
+.CTACont {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    gap: 80px;
+}
+
+.CTAHeader {
+    font-size: calc(30px + 5vw);
+    line-height: calc(30px + 4vw);
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.CTAHeader p {
+    max-width: 1400px;
+}
+
+.CTADesc {
+    font-size: calc(14px + 2vw);
+    display: flex;
+    justify-content: center;
+}
+
+.CTADesc p {
+    max-width: 1000px;
+}
+
+.CTAButton {
+    border: 2px solid var(--green);
+    margin: 0 30px;
+    padding: 2%;
+    font-size: calc(12px + 4vw);
+    border-radius: 120px;
+}
+
+.CTAButton:hover {
+    background-color: #BBEF4430;
+    cursor: pointer;
+}
